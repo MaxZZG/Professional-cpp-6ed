@@ -6,3 +6,5 @@
 *toc
 *.listing
 *.synctex(busy)
+*.pygtex
+*.pygstyle
