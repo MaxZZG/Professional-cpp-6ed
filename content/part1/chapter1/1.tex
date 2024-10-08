@@ -729,7 +729,7 @@ $3.40 \times 10^{38}$ \\ \hline
 \begin{tabular}[c]{@{}l@{}}\verb|i = j & k;|\\ \verb|j &= k;| \end{tabular} \\ \hline
 \begin{tabular}[c]{@{}l@{}}\mintinline{C}{|} \\ \mintinline{C}{|=}\end{tabular} &
 \begin{tabular}[c]{@{}l@{}}获取变量的位表达式，并对另一个表达式执行位或运算。\end{tabular} &
-\begin{tabular}[c]{@{}l@{}}\mintinline{C}{i = j | k;}\\ \mintinline{C}{j |= k;}\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}\mintinline{C}{i = j | k;}\\ \mintinline{C}{j = k;}\end{tabular} \\ \hline
 \begin{tabular}[c]{@{}l@{}}\verb|<<| \\ \verb|>>| \\ \verb|<<=|\\ \verb|>>=|\end{tabular} &
 \begin{tabular}[c]{@{}l@{}}获取表达式的原始位，并将每个位向左\\ (\textless{}\textless{})或向右(\textgreater{}\textgreater{})移动，指定的位数。\end{tabular} &
 \begin{tabular}[c]{@{}l@{}}\verb|i = i << 1;|\\ \verb|i = i >> 4;|\\ \verb|i <<= 1;|\\ \verb|i >>= 4;|\end{tabular} \\ \hline
@@ -784,31 +784,31 @@ int i { 34 + (8 * 2) + ( (21 / 7) % 2 ) };
 
 \begin{itemize}
 \item
-++ \enspace −{}− (后置)
+\verb|++ −−| (后置)
 
 \item
-! \enspace ++ \enspace −{}− (前置)
+\verb|! ++ −−| (前置)
 
 \item
-* \enspace / \enspace \%
+\verb|* / %|
 
 \item
-+ \enspace −
+\verb|+ −|
 
 \item
-<{}< \enspace >{}>
+\verb|<< >>|
 
 \item
-\&
+\verb|&|
 
 \item
-\textasciicircum
+\verb|^|
 
 \item
-|
+\mintinline{C}{|}
 
 \item
-= \enspace += \enspace -= \enspace *= \enspace /= \enspace \%= \enspace \&= \enspace |= \enspace \textasciicircum= \enspace <{}<= \enspace >{}>=
+\mintinline{C}{= += -= *= /= %= &= |= ^= <<= >>=}
 
 \end{itemize}
 
